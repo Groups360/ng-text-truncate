@@ -16,14 +16,14 @@
           customMoreLabel: "@ngTtMoreLabel",
           customLessLabel: "@ngTtLessLabel"
         },
-        controller: function($scope, $element, $attrs) {
+        controller: ["$scope", "$element", "$attrs", function($scope, $element, $attrs) {
           $scope.toggleShow = function($event) {
             $event.stopPropagation();
             $scope.open = !$scope.open;
           };
 
           $scope.useToggling = $attrs.ngTtNoToggling === undefined;
-        },
+        }],
         link: function($scope, $element, $attrs) {
           $scope.open = false;
 
