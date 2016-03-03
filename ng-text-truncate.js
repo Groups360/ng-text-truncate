@@ -16,15 +16,14 @@
           customMoreLabel: "@ngTtMoreLabel",
           customLessLabel: "@ngTtLessLabel"
         },
-        controller: ["$scope", "$element", "$attrs", function($scope, $element, $attrs) {
+        link: function($scope, $element, $attrs) {
           $scope.toggleShow = function($event) {
             $event.stopPropagation();
             $scope.open = !$scope.open;
           };
 
           $scope.useToggling = $attrs.ngTtNoToggling === undefined;
-        }],
-        link: function($scope, $element, $attrs) {
+
           $scope.open = false;
 
           ValidationServices.failIfWrongThreshouldConfig($scope.charsThreshould, $scope.wordsThreshould);
