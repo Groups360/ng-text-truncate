@@ -1,0 +1,19 @@
+{
+  "name": "ng-text-truncate",
+  "version": "2.0.0",
+  "description": "Simple directive for truncating text in AngularJS apps and toggling the hidden parts of the truncated texts.",
+  "main": "ng-text-truncate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Groups360/ng-text-truncate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Groups360/ng-text-truncate/issues"
+  },
+  "homepage": "https://github.com/Groups360/ng-text-truncate#readme"
+}
